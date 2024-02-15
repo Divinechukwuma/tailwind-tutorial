@@ -12,7 +12,7 @@ module.exports = {
         'open-menu':{
           '0%':{transform:'scaleY(0)'},
           '80%':{transform:'scaleY(1.2)'},
-          '1o0%':{transform:'scaleY(1)'},
+          '100%':{transform:'scaleY(1)'},
 
         },
       },
