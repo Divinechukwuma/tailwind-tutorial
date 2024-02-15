@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Divine project</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js " defer></script>
 </head>
 
 <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
@@ -16,16 +17,27 @@
         <a href="#hero">🌏 DivineMaps</a>
       </h1>
       <div>
-        <button id="mobile-open-button" class="text-3x1 sm:hidden focus:outline-none">
-          &#9776;
+        <button id="hamburger-button" class="text-3x1 md:hidden cursor-pointer relative w-8 h-8">
+           <!-- &#9776; -->
         </button>
-        <nav class="hidden sm:block space-x-8 text-xl " arial-label="main">
+        <nav class="hidden md:block space-x-8 text-xl " arial-label="main">
           <a href="#trips" class="hover:opacity-90">Trips</a>
           <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
           <a href="#contact " class="hover:opacity-90">Contact Us</a>
         </nav>
       </div>
     </section>
+      <section id="mobile-menu" class="absolute top-68 bg-black w-full text-5xl  flex-col justify-content-center origin-top animate-open-menu hidden">
+        <!-- this is the first variation of the hamburger icon buton -->
+         <!-- <button class="text-8xl self-end px6">&times;</button> -->
+         <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile"> 
+          <a href="#hero" class="w-full text-center hover:opacity-90 py-6">Home</a>
+          <a href="#trips" class="w-full text-center hover:opacity-90 py-6">Trips</a>
+          <a href="#testimonials" class="w-full text-center hover:opacity-90 py-6">Testimonials</a>
+          <a href="#contact" class="w-full text-center hover:opacity-90 py-6">Contact</a>
+          <a href="#footer" class="w-full text-center hover:opacity-90 py-6">Legal</a>
+         </nav>
+      </section>
   </header>
 
   <main class="max-w-4xl mx-auto">
@@ -51,7 +63,7 @@
       <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
         <li
           class="w-2/3 sm:w-5/6 flex flex-col item-center border border-solid border-slate-900 dark:border-grey-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
-          <img src="./img/undraw_Aircraft_re_m05i-removebg-preview.p ng" alt="undraw_Aircraft_re_m05i-removebg-preview"
+          <img src="./img/undraw_Aircraft_re_m05i-removebg-preview.png" alt="undraw_Aircraft_re_m05i-removebg-preview"
             class="w-1/2.mb-6 h-40 max-sm:h-40">
           <h3 class="text-2xl text-center text-slate-900 dark:text-white">DivinePlanes</h3>
           <p class=" hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">$</p>
@@ -78,7 +90,8 @@
 
     <hr class="mx-auto bg-dark dak:bg-white w-1/2">
 
-    <section id="testimonials" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+    <section id="testimonials"
+      class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
       <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"> Testimonials</h2>
 
       <figure class="my-12">
@@ -132,7 +145,7 @@
 
     <hr class="mx-auto bg-dark dak:bg-white w-1/2">
 
-    <section id="contact" class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height"> 
+    <section id="contact" class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height">
       <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">Contact Us</h2>
 
       <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
@@ -166,7 +179,7 @@
         <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
         <a href="#contact" class="hover:opacity-90">Contact Us</a>
       </nav>
- 
+
       <div class="flex flex-col sm:gap-2">
         <p class="text-right">Copyright &copy;<span id="year">2024</span></p>
         <p class="text-right">All Rights Reserved</p>
